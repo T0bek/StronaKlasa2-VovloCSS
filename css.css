@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    grid-template-areas: 
+    'h h h h h h h h h h h h'
+    'c c c c c c c c c c c c'
+    'c c c c c c c c c c c c'
+    'c c c c c c c c c c c c'
+    'c c c c c c c c c c c c'
+    'w w w w w w w w w w w w'
+    'w w w w w w w w w w w w'
+    'w w w w w w w w w w w w'
+    'w w w w w w w w w w w w'
+    'w w w w w w w w w w w w'
+    'w w w w w w w w w w w w'
+    'f f f f f f f f f f f f'
+    'f f f f f f f f f f f f'
+    'f f f f f f f f f f f f'
+    'f f f f f f f f f f f f'
+    'f f f f f f f f f f f f';
+    
+}
+
+body{ 
+    background-image: url(2018-volvov60-40.jpg) ;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+.head{
+    display: flex;
+    align-items: center;
+    background-color: #e2d9d9;
+    color: black;
+    opacity: 0.8;
+    width: 98.9vw;
+    height: 7vh;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.option p:hover{
+    color: orange;
+    cursor: pointer;
+}
+.option{
+    float: left;
+    height: 7vh;
+    width: 16vh;
+    position: relative
+}
+.option p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #383636;
+}
+
+.zadanie{
+    float: left;
+    width: 55vw;
+    color: #a59a9a;
+    margin-left: 5vw;
+}
+
+.content{
+    grid-area: c;
+    height: 100vh;
+}
+
+.doroboty{
+    font-size: 9vh;
+    color: #383636;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 60vw;
+    text-align: center;
+}
+.pai{
+    font-size: 2vh;
+    color: #383636;
+    position: relative;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-color: orange;
+    text-align: center;
+    width: 25vw;
+    height: 8vh;
+    opacity: 0.7;
+}
+
+.pai p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vh;
+}
+
+.buttony{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+}
+
+.buton:hover{
+    cursor: pointer;
+    background-color: orange;
+    transition: ease 1s;
+}
+.buton2:hover{
+    cursor: pointer;
+    background-color: orange;
+    transition: ease 1s;
+}
+
+
+.buton{
+    background-color: black;
+    color: white;
+    width: 170px;
+    height: 8vh;
+    position: relative;
+    font-size: 2vh;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 0.5vw;
+    transition: ease 1s;
+}
+
+.buton2{
+    background-color: black;
+    color: white;
+    width: 170px;
+    height: 8vh;
+    position: relative;
+    font-size: 2vh;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 0.5vw;
+    transition: ease 1s;
+}
+
+.buton p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buton2 p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.auta{
+    grid-area: w;
+    background-color: #ffffff;
+    height: 65vh;
+    width: 99vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.auto{
+    height: 60vh;
+    width: 50vw;
+    background-image: url(volvo-s60-hybrid-2560x1440-2019-cars-19389.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.auto img{
+    width: 700px;
+    height: 400px;
+}
+
+.lorem{
+    height: 60vh;
+    width: 39vw;
+    float: right;
+    line-height: 5vh;
+}
+.lor{
+    margin: 5vh;
+    font-size: 3vh;
+}
+h1{
+    margin: 5vh;
+    color: orange;
+}
+
+.fot{
+    grid-area: f;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(volvo-v60-26-c9c6c77cfcc62a6cba6,0,920,0,0.jpg);
+    background-position: center;
+   background-repeat: no-repeat;
+    width: 99vw;
+    height: 95vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.op{
+    width: 40vw;
+    height: 5vh;
+    margin: 1vh;
+    border-radius: 5px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.wiad{
+    width: 40vw;
+    height: 20vh;
+    margin: 1vh;
+    border-radius: 5px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+button{
+    margin: 1vh;
+    height: 7vh;
+    width: 15vw;
+    border-radius: 5px;
+    background-color: black;
+    color: #383636;
+    transition: ease 1s;
+}
+
+button:hover{
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+iframe{
+    margin-left: 2vw;
+}
+
+@media only screen and (max-width: 1260px){
+    .head{
+        width: 100vw;
+    }
+    .fot{
+        height: 120vh;
+        width: 100vw;
+    }
+    .op{
+        width: 60vw;
+        height: 5vh;
+        margin: 1vh;
+    }
+    .wiad{
+        width: 60vw;
+        height: 20vh;
+        margin: 1vh;
+    }
+    button{
+        margin: 1vh;
+        height: 7vh;
+        width: 60vw;
+    }
+    .auta{
+        height: 100vh;
+        width: 100vw;
+    }
+    .auto{
+        width: 100vw;
+    }
+    .auto img{
+        width: 700px;
+        height: 400px;
+    }
+    .lorem{
+        float: none;
+        width: 90vw;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+    .op{
+        width: 90vw;
+        height: 5vh;
+        margin: 1vh;
+    }
+    .wiad{
+        width: 90vw;
+        height: 20vh;
+        margin: 1vh;
+    }
+    button{
+        margin: 1vh;
+        height: 7vh;
+        width: 90vw;
+    }
+    .option{
+        display: none;
+    }
+}
